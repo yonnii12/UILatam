@@ -11,7 +11,7 @@ Automatización de pruebas UI para la búsqueda de vuelos en el sitio de LATAM A
 - **Maven** como manejador de dependencias
 - **TestNG** como framework de ejecución
 - **Cucumber** para definición de pruebas BDD (Gherkin)
-- **Allure** para generación de reportes bonitos
+- **Allure** para generación de reportes
 
 ---
 
