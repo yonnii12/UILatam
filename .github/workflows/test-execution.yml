@@ -37,8 +37,11 @@ jobs:
         run: |
           allure generate target/allure-results --clean -o target/allure-report
 
-      - name: Guardar reporte como artefacto
-        uses: actions/upload-artifact@v3.1.2
+      - name: Comprimir el reporte Allure
+        run: zip -r allure-report.zip target/allure-report
+
+      - name: Subir reporte Allure como artefacto
+        uses: actions/upload-artifact@v2
         with:
-          name: allure-report
-          path: target/allure-report
+          name: allure-report-zip
+          path: allure-report.zip
