@@ -1,4 +1,4 @@
-name: 🚀 ATM LATAM UI Tests
+name: ATM LATAM UI Tests
 
 on:
   workflow_dispatch:
@@ -30,7 +30,7 @@ jobs:
         run: mvn test
 
       - name: Guardar resultados como artefacto
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: allure-results
           path: target/allure-results/
